@@ -14,4 +14,4 @@ It improves customer convenience by enabling anytime, anywhere ordering. It also
 Built using only HTML, CSS, and JavaScript, the project demonstrates core front-end development skills while delivering a functional and interactive web application.
 
 
-To view it on live : splendid-piroshki-0b3c00.netlify.app
+To view it on live :https://splendid-piroshki-0b3c00.netlify.app/
