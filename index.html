@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Elegant Eats - Restaurant</title>
+<link rel="stylesheet" href="styles.css">
+<body>
+<header>
+  <nav>
+    <div class="logo">Elegant Eats</div>
+    <div class="nav-links" role="navigation" aria-label="Primary navigation">
+      <a data-link="home" class="active" tabindex="0">Home</a>
+      <a data-link="about" tabindex="0">About</a>
+      <a data-link="menu" tabindex="0">Menu</a>
+      <a data-link="reservation" tabindex="0">Reservation</a>
+      <a data-link="gallery" tabindex="0">Gallery</a>
+      <a data-link="contact" tabindex="0">Contact</a>
+    </div>
+    <div class="hamburger" aria-label="Toggle Menu" tabindex="0">
+      <div></div><div></div><div></div>
+    </div>
+  </nav>
+  <div class="nav-mobile" aria-label="Mobile Navigation Menu"></div>
+</header>
+<main>
+  <!-- HOME -->
+  <section id="home" class="active" tabindex="0" aria-label="Home section">
+    <div class="hero-content">
+      <h1>Welcome to Elegant Eats</h1>
+      <p>Exquisite flavors &amp; an extraordinary dining experience</p>
+      <button id="toReservationBtn">Book a Table</button>
+    </div>
+    <div id="home-about" aria-label="Welcome and about preview">
+      <img src="https://images.unsplash.com/photo-1555992336-03a23c4a41ea?auto=format&fit=crop&w=800&q=80" alt="Restaurant Interior" loading="lazy" />
+      <div class="text">
+        <p>At Elegant Eats, we believe in delivering not just a meal, but a memorable culinary journey. Indulge in carefully prepared dishes crafted from the freshest ingredients paired with impeccable service in a warm and stylish atmosphere.</p>
+        <p>Join us to taste the magic of vibrant flavors and the passion of our chefs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" tabindex="0" aria-label="About us" role="region">
+    <h1>Our Story</h1>
+    <div class="story" aria-label="Restaurant story">
+      <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=800&q=80" alt="Elegant dining area" loading="lazy"/>
+      <div class="text">
+        <p>Founded in 2010, Elegant Eats was born out of a passion for exceptional culinary experiences and a welcoming atmosphere where friends and families could unite to enjoy exquisite food.</p>
+        <p>Our team of talented chefs crafts each dish with love and the finest ingredients, ensuring every bite is packed with vibrant flavors and creativity.</p>
+        <p>We pride ourselves on personalized service, elegant ambiance, and a menu designed to delight every palate.</p>
+      </div>
+    </div>
+    <div class="values" aria-label="Our values and qualities">
+      <div>
+        <h3>Quality Ingredients</h3>
+        <p>We source fresh, local ingredients to ensure the highest quality and sustainability.</p>
+      </div>
+      <div>
+        <h3>Masterful Craftsmanship</h3>
+        <p>Our chefs blend timeless techniques with modern creativity.</p>
+      </div>
+      <div>
+        <h3>Warm Atmosphere</h3>
+        <p>Enjoy a cozy, stylish setting designed for comfort and relaxation.</p>
+      </div>
+      <div>
+        <h3>Friends & Family</h3>
+        <p>A place you can count on for memorable moments with loved ones.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu" tabindex="0" aria-label="Menu" role="region">
+    <h1>Our Menu</h1>
+    <div class="filter-tabs" role="tablist" aria-label="Menu categories">
+      <button type="button" class="active" data-filter="all" role="tab" aria-selected="true" tabindex="0">All</button>
+      <button type="button" data-filter="starters" role="tab" aria-selected="false" tabindex="0">Starters</button>
+      <button type="button" data-filter="mains" role="tab" aria-selected="false" tabindex="0">Mains</button>
+      <button type="button" data-filter="desserts" role="tab" aria-selected="false" tabindex="0">Desserts</button>
+      <button type="button" data-filter="drinks" role="tab" aria-selected="false" tabindex="0">Drinks</button>
+    </div>
+    <div class="menu-grid" role="region" aria-live="polite">
+      <!-- Starters -->
+      <article class="menu-item starters" tabindex="0" role="article" aria-label="Bruschetta">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=400&q=80" alt="Bruschetta on rustic bread with tomatoes and basil" loading="lazy" />
+        <div class="menu-content">
+          <div class="menu-title-price">
+            <h3 class="menu-title">Bruschetta</h3>
+            <span class="menu-price">R8.50</span>
+          </div>
+          <p class="menu-desc">Grilled bread rubbed with garlic, topped with fresh tomatoes, basil, and olive oil.</p>
+        </div>
+      </article>
+      <article class="menu-item starters" tabindex="0" role="article" aria-label="Caesar Salad">
+        <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=400&q=80" alt="Caesar Salad with croutons and parmesan" loading="lazy" />
+        <div class="menu-content">
+          <div class="menu-title-price">
+            <h3 class="menu-title">Caesar Salad</h3>
+            <span class="menu-price">R9.00</span>
+          </div>
+          <p class="menu-desc">Romaine lettuce with Caesar dressing, croutons, and fresh parmesan cheese.</p>
+        </div>
+      </article>
+      <!-- Mains -->
+      <article class="menu-item mains" tabindex="0" role="article" aria-label="Grilled Salmon">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Grilled salmon with vegetables" loading="lazy" />
+        <div class="menu-content">
+          <div class="menu-title-price">
+            <h3 class="menu-title">Grilled Salmon</h3>
+            <span class="menu-price">R22.00</span>
+          </div>
+          <p class="menu-desc">Fresh salmon grilled to perfection, served with seasonal vegetables and lemon butter sauce.</p>
+        </div>
+      </article>
+      <article class="menu-item mains" tabindex="0" role="article" aria-label="Steak Frites">
+        <img src="https://images.unsplash.com/photo-1565294138864-3cdbd5e47b42?auto=format&fit=crop&w=400&q=80" alt="Steak with fries" loading="lazy" />
+        <div class="menu-content">
+          <div class="menu-title-price">
+            <h3 class="menu-title">Steak Frites</h3>
+            <span class="menu-price">R25.00</span>
+          </div>
+          <p class="menu-desc">Juicy sirloin steak accompanied by crispy golden fries and herb butter.</p>
+        </div>
+      </article>
+      <!-- Desserts -->
+      <article class="menu-item desserts" tabindex="0" role="article" aria-label="Chocolate Lava Cake">
+        <img src="https://images.unsplash.com/photo-1558021212-51b6f0f9a9f6?auto=format&fit=crop&w=400&q=80" alt="Chocolate lava cake with ice cream" loading="lazy" />
+        <div class="menu-content">
+          <div class="menu-title-price">
+            <h3 class="menu-title">Chocolate Lava Cake</h3>
+            <span class="menu-price">R9.50</span>
+          </div>
+          <p class="menu-desc">Warm chocolate cake with a molten center, served with vanilla ice cream.</p>
+        </div>
+      </article>
+      <article class="menu-item desserts" tabindex="0" role="article" aria-label="Tiramisu">
+        <img src="https://images.unsplash.com/photo-1605381787384-2b7e1abd0511?auto=format&fit=crop&w=400&q=80" alt="Tiramisu dessert" loading="lazy" />
+        <div class="menu-content">
+          <div class="menu-title-price">
+            <h3 class="menu-title">Tiramisu</h3>
+            <span class="menu-price">R8.00</span>
+          </div>
+          <p class="menu-desc">Classic Italian coffee-flavored dessert made with mascarpone cheese and ladyfingers.</p>
+        </div>
+      </article>
+      <!-- Drinks -->
+      <article class="menu-item drinks" tabindex="0" role="article" aria-label="Red Wine Glass">
+        <img src="https://images.unsplash.com/photo-1547592180-862bb16bec25?auto=format&fit=crop&w=400&q=80" alt="Glass of red wine" loading="lazy" />
+        <div class="menu-content">
+          <div class="menu-title-price">
+            <h3 class="menu-title">Red Wine</h3>
+            <span class="menu-price">R10.00</span>
+          </div>
+          <p class="menu-desc">Rich and full-bodied red wine, perfect with steaks and hearty mains.</p>
+        </div>
+      </article>
+      <article class="menu-item drinks" tabindex="0" role="article" aria-label="Fresh Orange Juice">
+        <img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?auto=format&fit=crop&w=400&q=80" alt="Glass of fresh orange juice" loading="lazy" />
+        <div class="menu-content">
+          <div class="menu-title-price">
+            <h3 class="menu-title">Fresh Orange Juice</h3>
+            <span class="menu-price">R6.00</span>
+          </div>
+          <p class="menu-desc">Cold-pressed orange juice made from fresh, ripe oranges.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- RESERVATION -->
+  <section id="reservation" tabindex="0" aria-label="Reservation form" role="region">
+    <h1>Book a Table</h1>
+    <form id="reservationForm" novalidate>
+      <div>
+        <label for="name">Full Name<span aria-hidden="true" style="color:#ff6f3c;"> *</span></label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required aria-required="true" />
+      </div>
+      <div>
+        <label for="email">Email Address<span aria-hidden="true" style="color:#ff6f3c;"> *</span></label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required aria-required="true" />
+      </div>
+      <div>
+        <label for="phone">Phone Number<span aria-hidden="true" style="color:#ff6f3c;"> *</span></label>
+        <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required aria-required="true" pattern="\\d{7,15}" />
+      </div>
+      <div>
+        <label for="date">Date<span aria-hidden="true" style="color:#ff6f3c;"> *</span></label>
+        <input type="date" id="date" name="date" required aria-required="true" min="" />
+      </div>
+      <div>
+        <label for="time">Time<span aria-hidden="true" style="color:#ff6f3c;"> *</span></label>
+        <input type="time" id="time" name="time" required aria-required="true" min="11:00" max="22:00" />
+        <small>Available between 11:00 and 22:00</small>
+      </div>
+      <div>
+        <label for="guests">Number of Guests<span aria-hidden="true" style="color:#ff6f3c;"> *</span></label>
+        <select id="guests" name="guests" required aria-required="true">
+          <option value="" disabled selected>Select</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6+</option>
+        </select>
+      </div>
+      <button type="submit">Reserve Now</button>
+    </form>
+    <div class="confirmation" id="confirmation" role="alert" aria-live="assertive"></div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" tabindex="0" aria-label="Photo gallery" role="region">
+    <h1>Gallery</h1>
+    <div class="gallery-grid" role="region" aria-label="Pictures of restaurant and dishes">
+      <!-- Existing Images -->
+      <div class="gallery-item" tabindex="0" aria-label="Interior seating area with orange chairs">
+        <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=800&q=80" alt="Interior seating area with orange chairs" loading="lazy" />
+      </div>
+      <div class="gallery-item" tabindex="0" aria-label="Delicious pasta plate">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Delicious pasta plate" loading="lazy" />
+      </div>
+      <div class="gallery-item" tabindex="0" aria-label="Close-up of dessert with raspberries">
+        <img src="https://images.unsplash.com/photo-1558021212-51b6f0f9a9f6?auto=format&fit=crop&w=800&q=80" alt="Close-up of dessert with raspberries" loading="lazy" />
+      </div>
+      <div class="gallery-item" tabindex="0" aria-label="Elegant dining table setting with candles">
+        <img src="https://images.unsplash.com/photo-1526698054155-6d1c45aab975?auto=format&fit=crop&w=800&q=80" alt="Elegant dining table setting with candles" loading="lazy" />
+      </div>
+      <div class="gallery-item" tabindex="0" aria-label="Smoked salmon appetizer">
+        <img src="https://images.unsplash.com/photo-1516685018646-5495d5e5e527?auto=format&fit=crop&w=800&q=80" alt="Smoked salmon appetizer" loading="lazy" />
+      </div>
+      <div class="gallery-item" tabindex="0" aria-label="Chef preparing meal in kitchen">
+        <img src="https://images.unsplash.com/photo-1520697222865-35ac8391a4b3?auto=format&fit=crop&w=800&q=80" alt="Chef preparing meal in kitchen" loading="lazy" />
+      </div>
+      <!-- New Images -->
+      <div class="gallery-item" tabindex="0" aria-label="Fresh herbs in kitchen">
+        <img src="https://images.unsplash.com/photo-1542444459-6c86d4d54048?auto=format&fit=crop&w=800&q=80" alt="Fresh herbs in kitchen" loading="lazy" />
+      </div>
+      <div class="gallery-item" tabindex="0" aria-label="Grilled vegetables on plate">
+        <img src="https://images.unsplash.com/photo-1464302847358-d840af505448?auto=format&fit=crop&w=800&q=80" alt="Grilled vegetables on plate" loading="lazy" />
+      </div>
+      <div class="gallery-item" tabindex="0" aria-label="Modern bar with bottles">
+        <img src="https://images.unsplash.com/photo-1533777324565-a04df0e527b7?auto=format&fit=crop&w=800&q=80" alt="Modern bar with bottles" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" tabindex="0" aria-label="Contact us" role="region">
+    <h1>Contact Us</h1>
+    <section class="contact-info" aria-label="Contact information">
+      <div class="contact-box" tabindex="0">
+        <h3>Location</h3>
+        <p>123 Elegant St,<br />Gourmet City, GC 45678</p>
+      </div>
+      <div class="contact-box" tabindex="0">
+        <h3>Phone</h3>
+        <p><a href="tel:0635728389">+27 63 5728 389</a></p>
+      </div>
+      <div class="contact-box" tabindex="0">
+        <h3>Email</h3>
+        <p> <a href="emailto:georgejojose@gmail.com" > info@eleganteats.com </a> </p>
+      </div>
+    </section>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086713081448!2d-122.41990038468186!3d37.77492927975943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809cba2bbc4d%3A0xa70dbf2282e6c051!2sElegant%20Eats!5e0!3m2!1sen!2sus!4v1696416000000!5m2!1sen!2sus"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      title="Elegant Eats location on map"></iframe>
+    <form aria-label="Contact form" novalidate>
+      <label for="contact-name">Name</label>
+      <input type="text" id="contact-name" name="contact-name" placeholder="Your name" required />
+      <label for="contact-email">Email</label>
+      <input type="emailto:georgejojose@gmail.com" id="contact-email" name="contact-email" placeholder="your@email.com" required />
+      <label for="contact-message">Message</label>
+      <textarea id="contact-message" name="contact-message" placeholder="Your message here..." required></textarea>
+      <button type="submit" required>Send Message</button>
+    </form>
+  </section>
+</main>
+<footer>
+  &copy; 2024 Elegant Eats &bull;
+  <a href="#" aria-label="Facebook" title="Facebook">Fb</a>
+  <a href="#" aria-label="Instagram" title="Instagram">Ig</a>
+  <a href="#" aria-label="Twitter" title="Twitter">Tw</a>
+</footer>
+
+<script src="script.js" ></script>
+</html>
