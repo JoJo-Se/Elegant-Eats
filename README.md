@@ -12,3 +12,6 @@ It improves customer convenience by enabling anytime, anywhere ordering. It also
 ## Tech Stack
 
 Built using only HTML, CSS, and JavaScript, the project demonstrates core front-end development skills while delivering a functional and interactive web application.
+
+
+To view it on live : splendid-piroshki-0b3c00.netlify.app
